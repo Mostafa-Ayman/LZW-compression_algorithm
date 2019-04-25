@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LZW_compression_algorithm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bNI-Uv-AkT">
+                                <rect key="frame" x="16" y="81" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="RuV-aV-Xfd"/>
+                                    <constraint firstAttribute="height" constant="30" id="mwi-Xq-Ven"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Mg0-c5-6kG">
+                                <rect key="frame" x="0.0" y="138" width="375" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="6hO-5o-bFa"/>
+                                    <constraint firstAttribute="height" constant="128" id="Cjl-1s-kfS"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waw-wu-Ebb">
+                                <rect key="frame" x="87" y="305" width="201" height="38"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="201" id="MB9-Yd-5CX"/>
+                                    <constraint firstAttribute="height" constant="38" id="OuG-bp-oxg"/>
+                                </constraints>
+                                <state key="normal" title="ENTER">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oZS-2O-HTg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="waw-wu-Ebb" secondAttribute="trailing" constant="87" id="3vB-fg-3YZ"/>
+                            <constraint firstItem="bNI-Uv-AkT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9xQ-k7-W4A"/>
+                            <constraint firstItem="bNI-Uv-AkT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="HWA-qd-GhR"/>
+                            <constraint firstItem="waw-wu-Ebb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="HWZ-2f-2XH"/>
+                            <constraint firstItem="Mg0-c5-6kG" firstAttribute="top" secondItem="bNI-Uv-AkT" secondAttribute="bottom" constant="27" id="Kz6-T1-myi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bNI-Uv-AkT" secondAttribute="trailing" constant="16" id="Lp0-Vk-ScX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mg0-c5-6kG" secondAttribute="trailing" id="Zfo-0u-ClR"/>
+                            <constraint firstItem="waw-wu-Ebb" firstAttribute="top" secondItem="Mg0-c5-6kG" secondAttribute="bottom" constant="39" id="uUn-FV-gev"/>
+                            <constraint firstItem="Mg0-c5-6kG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vjp-VH-8Bq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="waw-wu-Ebb" id="UJi-Wa-gRe"/>
+                        <outlet property="inputTextField" destination="bNI-Uv-AkT" id="4yi-QR-Idg"/>
+                        <outlet property="outputView" destination="Mg0-c5-6kG" id="g5c-R6-D0Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1223.2" y="-91.304347826086968"/>
+        </scene>
+    </scenes>
+</document>
